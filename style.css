@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+}
+
+.container-item {
+  /* border: 1px solid thistle; */
+  /* box-shadow: 1px 1.5px blue; */
+  /* border-radius: 5px; */
+}
+
+
+.item-1 {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  grid-column: 1 / span 12;
+}
+
+.navigation {
+  width: 50%;
+}
+
+.nav-item {
+  padding: 0 20px;
+  list-style-type: none;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+
+.logo {
+  align-items: baseline;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.item-2 {
+  grid-column: 1/span 12;
+}
+
+.item-3 {
+  grid-column: 1/span 12;
+}
+
+.item-4 {
+  grid-column: 1/span 12;
+}
+
+.item-5 {
+  grid-column: 1/ span 12;
+}
+
+.item-6 {
+  grid-column: 1/span 12;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto 2fr 3fr;
+    height: 100vh;
+
+  }
+
+  .item-1 {
+    grid-row: 1;
+    grid-column: 1 / span 12;
+  }
+
+  .item-2 {
+    grid-row: 2;
+    grid-column: 1 / span 12;
+  }
+
+  .item-3 {
+    grid-row: 3;
+    grid-column: 1 / span 12;
+    background-image: url('./images/career_640.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .item-4 {
+    grid-row: 4;
+    grid-column: 1 / span 12;
+  }
+
+  .item-5 {
+    grid-row: 5;
+    grid-column: 1/ span 12;
+  }
+
+  .item-6 {
+    grid-row: 6;
+    grid-column: 1/ span 12;
+  }
+
+  .item-7 {
+    grid-row: 7;
+    grid-column: 1/ span 12;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto 1fr 2fr auto auto;
+    height: 100vh;
+  }
+
+  .container-item {
+    border: 1px solid thistle;
+    box-shadow: 1px 1.5px blue;
+    border-radius: 5px;
+  }
+
+  .item-1 {
+    grid-column: 1/ span 12;
+  }
+
+  .item-2 {
+    grid-column: 1/span 12;
+  }
+
+  .item-3 {
+    grid-column: 3/span 10;
+    background-image: url('./images/career_640.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .item-4 {
+    grid-column: 3 /span 10;
+  }
+
+  .item-5 {
+    grid-row: 3/ span 2;
+    grid-column: 1/ span 2;
+    /* grid-column: 1/span 12; */
+  }
+
+  .item-6 {
+    grid-column: 1/span 12;
+  }
+
+  .item-7 {
+    grid-column: 1/span 12;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+  .container {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto 1fr 2fr auto auto;
+    height: 100vh;
+  }
+
+  .container-item {
+    border: 1px solid thistle;
+    box-shadow: 1px 1.5px blue;
+    border-radius: 5px;
+  }
+
+  .item-1 {
+    grid-column: 1/ span 12;
+  }
+
+  .item-2 {
+    grid-column: 1/span 12;
+  }
+
+  .item-3 {
+    grid-column: 3/span 8;
+  }
+
+  .item-4 {
+    grid-column: 3 /span 8;
+  }
+
+  .item-5 {
+    grid-row: 3/ span 2;
+    grid-column: 1/ span 2;
+    /* grid-column: 1/span 12; */
+  }
+
+  .item-6 {
+    grid-row: 3 / span 2;
+    grid-column: 11 / span 2;
+  }
+
+  .item-7 {
+    grid-column: 1/span 12;
+  }
+
+}
